@@ -1,0 +1,122 @@
+/* Base CSS for the website */
+
+:root {
+    --accent-color: #ec6726;
+    --accent-color-light: #F08956;
+    --accent-color-darker: #c0551f;
+    --accent-color-background: #fbe7dc;
+    --background-color: #f9f7f1;
+    --text-color: #3c3c3c;
+}
+
+/* 
+--primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #f9f9f9;
+    --text-color: #333; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    /* line-height: 1.5; */
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+h1, h2 {
+    /* font-family: "Abril Fatface", serif;
+    font-weight: 400; */
+
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+section {
+    width: clamp(300px, 100%, 1300px);
+    margin: auto;
+
+    padding: 1rem 3rem;
+}
+
+section {
+    min-height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.section-header {
+    /* font-size: 2rem; */
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}

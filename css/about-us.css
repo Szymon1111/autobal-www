@@ -1,0 +1,29 @@
+.about-section {
+    position: relative;
+}
+
+.about-section__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.about-section__image {
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    position: relative;
+
+    width: 400px;
+    translate: 0 -50%;
+
+}
+
+.about-section__image__img {
+    width: 400px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
