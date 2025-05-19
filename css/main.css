@@ -83,7 +83,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
 
 h5 {
@@ -91,18 +91,15 @@ h5 {
 }
 
 p {
-    font-size: 1rem;
+    /* font-size: 1.1rem; */
 }
 
 section {
-    width: clamp(300px, 100%, 1300px);
+    width: clamp(300px, 100%, 1240px);
+
     margin: auto;
-
-    padding: 1rem 3rem;
-}
-
-section {
-    min-height: 75vh;
+    padding: 1rem 2rem;
+    padding-top: 8rem;
 
     display: flex;
     flex-direction: column;
@@ -119,4 +116,14 @@ section {
     /* font-size: 2rem; */
     margin-bottom: 1rem;
     letter-spacing: 3px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
 }
