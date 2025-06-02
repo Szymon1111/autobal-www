@@ -52,6 +52,8 @@
 @media screen and (max-width: 924px) {
 
     .header {
+        display: none;
+        
         top: 100vh;
         translate: -50% -100%;
 
