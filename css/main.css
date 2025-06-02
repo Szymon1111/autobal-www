@@ -150,6 +150,13 @@ section {
     .section-header {
         letter-spacing: normal;
     }
+    .section-header:focus {
+        letter-spacing: var(--accent-color);
+    }
+
+    .section-header:hover {
+        color: var(--text-color)
+    }
     
     .header__logo-mobile {
         display: inline;    
