@@ -120,7 +120,7 @@ section {
     /* font-size: 2rem; */
     margin-bottom: 1rem;
     letter-spacing: 3px;
-    
+
     transition: color 0.3s ease;
 }
 
@@ -128,7 +128,15 @@ section {
     color: var(--accent-color);
 }
 
+.header__logo-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 924px) {
+
+    :root{
+        --border-radius: 12px;
+    }
 
     html {
         font-size: 12px;
@@ -139,8 +147,11 @@ section {
         padding-bottom: var(--section-padding-top-bottom-mobile);
     }
     
-    :root{
-        --border-radius: 12px;
+    .section-header {
+        letter-spacing: normal;
     }
     
+    .header__logo-mobile {
+        display: inline;    
+    }
 }

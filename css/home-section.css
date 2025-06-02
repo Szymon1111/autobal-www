@@ -107,5 +107,28 @@
   .home__content {
     justify-content: flex-start;
     gap: 3rem;
+    padding: 0;
   }
+
+  .home__offer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+
+    width: 100%;
+  }
+
+  .home__offer-item {
+    padding: 0;
+  }
+
+  .home__offer-item-image {
+    /* width: 48px; */
+    height: auto;
+  }
+
+  .home__offer-item-header {
+    display: none;
+  }
+  
 }
