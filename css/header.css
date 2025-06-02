@@ -12,7 +12,7 @@
 } 
 
 .header__content {
-    width: clamp(300px, 100%, 1240px);
+    width: clamp(300px, 100%, var(--body-width));
 
     display: flex;
     justify-content: space-between;

@@ -10,7 +10,9 @@
 .home__content {
 
   height: 100%;
-  width: 100%;
+  width: 80%;
+
+  margin: auto;
 
   padding-top: 2rem;
 
@@ -108,6 +110,7 @@
     justify-content: flex-start;
     gap: 3rem;
     padding: 0;
+    width: 100%;
   }
 
   .home__offer {

@@ -12,7 +12,7 @@
 
 .info__content {
     
-    width: clamp(300px, 100%, calc(1240px) * 1.2);
+    width: clamp(300px, 100%, var(--body-width));
     height: 100%;
 
     padding: 1rem 2rem;
@@ -22,24 +22,39 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 0px;
+    grid-row-gap: 3rem;
 
 }
 
 .info__hours {
-    grid-area: 1 / 1 / 3 / 3;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
-.info__hours-list-item {
+.info__contact {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.info__adress {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+.info__list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.info__item {
     padding: 0.5rem 0;
 }
 
-.info__details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.info__header {
+    /* color: var(--text-color); */
+}
 
-    gap: 1rem;
+.info__item-label {
+    font-weight: 700;
+    color: var(--text-color-dark);
 }
 
 .info__map {
@@ -89,6 +104,11 @@
         flex-direction: column;
 
         gap: 2rem;
+    }
+
+    .info {
+        min-height: 100vh;
+        padding-bottom: 5rem;
     }
     
 }

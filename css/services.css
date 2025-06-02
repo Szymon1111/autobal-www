@@ -14,7 +14,7 @@
     gap: 2rem;
     justify-content: center;
 
-    width: 120%;
+    width: 100%;
     max-width: calc(100vw - 3rem);
 }
 
@@ -91,8 +91,6 @@
     color: #fff;
     background-color: var(--accent-color);
 
-    font-size: 1.25rem;
-
     z-index: -100;
 }
 
@@ -116,5 +114,9 @@
 @media screen and (max-width: 924px) {
     .services {
         align-items: flex-start;
+    }
+    
+    .serices__card-extra-content {
+        font-size: 1.25rem;
     }
 }

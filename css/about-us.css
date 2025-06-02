@@ -1,16 +1,23 @@
 .about {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: clamp(300px, 100%, var(--body-width));
+
+    
 
     padding-top: 0;
 }
 
 .about__content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    margin: auto;
+    width: 80%;
+}
+
+.about__hook {
+    translate: 0 -175px;
 }
 
 .about__image {
@@ -20,6 +27,8 @@
     height: fit-content;
 
     overflow: hidden;
+
+    scale: 1.15;
 
 }
 
@@ -45,9 +54,13 @@
     .about {
         padding-top: var(--section-padding-top-bottom-mobile);
     }
-    
+
     .about__image {
         display: none;
+    }
+
+    .about__content {
+        width: 100%;
     }
 
 }

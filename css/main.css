@@ -7,9 +7,12 @@
     --accent-color-background: #fbe7dc;
     --background-color: #f9f7f1;
     --text-color: #3c3c3c;
+    --text-color-light: #484848;
+    --text-color-dark:#2a2a2a;
     --border-radius: 18px;
 
     --section-padding-top-bottom-mobile: 4rem;
+    --body-width: 1488px;
 }
 
 /* 
@@ -99,7 +102,7 @@ p {
 }
 
 section {
-    width: clamp(300px, 100%, 1240px);
+    width: clamp(300px, 100%, var(--body-width));
 
     margin: auto;
     padding: 1rem 2rem;
