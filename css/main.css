@@ -7,6 +7,9 @@
     --accent-color-background: #fbe7dc;
     --background-color: #f9f7f1;
     --text-color: #3c3c3c;
+    --border-radius: 18px;
+
+    --section-padding-top-bottom-mobile: 4rem;
 }
 
 /* 
@@ -87,7 +90,8 @@ h4 {
 }
 
 h5 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 p {
@@ -121,9 +125,19 @@ section {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 924px) {
+
     html {
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    section {
+        padding-top: var(--section-padding-top-bottom-mobile);
+        padding-bottom: var(--section-padding-top-bottom-mobile);
+    }
+    
+    :root{
+        --border-radius: 12px;
     }
     
 }

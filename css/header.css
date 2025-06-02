@@ -8,7 +8,7 @@
 
     width: 100%;
     
-    z-index: 100;
+    z-index: 1000;
 } 
 
 .header__content {
@@ -46,4 +46,32 @@
 
 .header__nav-item:hover {
     color: var(--accent-color);
+}
+
+
+@media screen and (max-width: 924px) {
+
+    .header {
+        top: 100vh;
+        translate: -50% -100%;
+
+        border-top: 2px solid var(--accent-color);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__nav {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .header__nav-item {
+        font-size: 1.25rem;
+    }
+
 }
