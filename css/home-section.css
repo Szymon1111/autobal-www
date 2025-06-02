@@ -102,10 +102,6 @@
     padding-bottom: var(--section-padding-top-bottom-mobile);
   }
 
-  .home__header {
-    font-size: 2.75rem;
-  }
-
   .home__content {
     justify-content: flex-start;
     gap: 3rem;

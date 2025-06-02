@@ -142,12 +142,28 @@ section {
     }
 
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     section {
         padding-top: var(--section-padding-top-bottom-mobile);
         padding-bottom: var(--section-padding-top-bottom-mobile);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
     }
     
     .section-header {
