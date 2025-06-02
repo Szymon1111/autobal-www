@@ -130,5 +130,10 @@
   .home__offer-item-header {
     display: none;
   }
+
+  .home__contact-header {
+    flex-direction: column;
+    gap: 0;
+  }
   
 }
