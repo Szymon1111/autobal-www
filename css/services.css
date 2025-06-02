@@ -6,12 +6,6 @@
 
 .services__header {
     margin-bottom: 2rem;
-
-    transition: color 0.3s ease;
-}
-
-.services__header:hover {
-    color: var(--accent-color);
 }
 
 .services__cards {

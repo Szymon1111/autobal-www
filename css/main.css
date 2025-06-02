@@ -120,10 +120,13 @@ section {
     /* font-size: 2rem; */
     margin-bottom: 1rem;
     letter-spacing: 3px;
+    
+    transition: color 0.3s ease;
 }
 
-
-
+.section-header:hover {
+    color: var(--accent-color);
+}
 
 @media screen and (max-width: 924px) {
 
