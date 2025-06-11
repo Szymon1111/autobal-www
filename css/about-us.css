@@ -6,7 +6,7 @@
     padding-top: 0;
 }
 
-.about__content {
+.about__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,6 +14,17 @@
 
     margin: auto;
     width: 80%;
+}
+
+.about__content {
+
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .75rem;
 }
 
 .about__hook {
@@ -28,7 +39,7 @@
 
     overflow: hidden;
 
-    scale: 1.15;
+    /* scale: 1.15; */
 
 }
 
@@ -59,7 +70,7 @@
         display: none;
     }
 
-    .about__content {
+    .about__container {
         width: 100%;
     }
 

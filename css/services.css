@@ -27,7 +27,7 @@
 
     background-color: #fff;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
@@ -36,7 +36,7 @@
 
 .services__card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow);
 }
 
 .services__card-image {
@@ -53,7 +53,6 @@
 }
 
 .services__card-header {
-    color: var(--accent-color);
     margin-bottom: 10px;
 }
 
@@ -109,6 +108,14 @@
 
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
+}
+
+.service__hook {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    translate: 0 -150px;
 }
 
 @media screen and (max-width: 924px) {

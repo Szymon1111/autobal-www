@@ -1,0 +1,14 @@
+
+.faq {
+    padding-bottom: 8rem;
+}
+
+.faq__question {
+    list-style: none;
+
+    cursor: pointer;
+}
+
+.faq__question::-webkit-details-marker {
+    display: none;
+}

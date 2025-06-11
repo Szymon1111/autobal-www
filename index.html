@@ -23,19 +23,40 @@
     <link rel="stylesheet" href="css/about-us.css?3">
     <link rel="stylesheet" href="css/services.css?3">
     <link rel="stylesheet" href="css/info.css?3">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/dynamic-classes.css">
+    <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="header__content">
-            <div class="header__logo">
-                <a href="#home">
-                    <img src="images/logo/logo-cropped.png" alt="Autobal" class="header__logo-image">
-                </a>
-            </div>
+    <div id="loader" class="loader">
+        <div class="loader__spinner"></div>
+        <h1 class="loader__text">Ładowanie...</h1>
+        <div class="loader__animation-container">
+            <div class="loader__animation-bar" ></div>
+        </div>
+    </div>
 
+    <header id="page-header" class="header">
+
+        <div class="header__content">
+
+            <div class="header__logo-container">
+                <div class="header__logo">
+                    <a href="#home">
+                        <img src="images/logo/logo-cropped.png" alt="Autobal" class="header__logo-image" width="70">
+                    </a>
+                </div>
+
+                <div class="header__partner-info">
+                    <h6 class="header__partner-text">
+                        Placówka partnerska
+                    </h6>
+                    <img src="images/generali-logo.svg" alt="Generali" width="125" class="header__partner-logo">
+                </div>
+            </div>
             <nav class="header__nav">
                 <div class="header__nav-item">
                     <a href="#about">O nas</a>
@@ -63,7 +84,7 @@
                     <img src="images/logo/logo-cropped.png" alt="Autobal" class="header__logo-image">
                 </a>
             </div> -->
-
+            <!-- <div class="home__background"></div> -->
             <div class="home__content">
 
                 <div class="home__header-container">
@@ -71,79 +92,91 @@
                         Witamy w Autobal<span class="accent-color">!</span>
                     </h1>
 
-                    <h4 class="home__sub-header">
-                        Z troską o to, co dla
-                        <span class="accent-color"> Ciebie </span>najważniejsze.
-                    </h4>
-                    <p>
-                        Oferujemy kompleksowe ubezpieczenia dostosowane do <span class="accent-color"> Twoich
-                        </span>potrzeb:
-                    </p>
-                </div>
+                    <!-- <span> -->
+                        <h4 class="home__sub-header">
+                            Z troską o to, co dla
+                            <span class="accent-color"> Ciebie </span>najważniejsze.
+                        </h4>
+                        <p>
+                            Oferujemy kompleksowe ubezpieczenia dostosowane do <span class="accent-color"> Twoich
+                            </span>potrzeb.
+                        </p>
+                    <!-- </span> -->
 
-                <div class="home__offer">
-                    <div class="home__offer-item">
-                        <h5 class="home__offer-item-header">
-                            Komunikacyjne
-                        </h5>
-                        <img src="images/header-icons/car.PNG" alt="car-image" class="home__offer-item-image">
-                    </div>
-                    <div class="home__offer-item">
-                        <h5 class="home__offer-item-header">
-                            Majątkowe
-                        </h5>
-                        <img src="images/header-icons/home.png" alt="car-image" class="home__offer-item-image">
-                    </div>
-                    <div class="home__offer-item">
-                        <h5 class="home__offer-item-header">
-                            Na życie
-                        </h5>
-                        <img src="images/header-icons/health.png" alt="car-image" class="home__offer-item-image">
-                    </div>
-                    <div class="home__offer-item">
-                        <h5 class="home__offer-item-header">
-                            Turystyczne
-                        </h5>
-                        <img src="images/header-icons/travel.PNG" alt="car-image" class="home__offer-item-image">
-                    </div>
-                </div>
-
-                <div class="home__contact">
                     <a href="tel: 126369099">
                         <h4 class="home__contact-header">
                             Zadzwoń i skorzystaj z naszych usług:
                             <div class="accent-color home__contact-phone">+12 636 90 99</div>
                         </h4>
                     </a>
+
+                </div>
+
+                <div class="home__offer">
+                    <a href="#service_car">
+                        <div class="home__offer-item">
+                            <h5 class="home__offer-item-header">
+                                Komunikacyjne
+                            </h5>
+                            <img src="images/header-icons/car.PNG" alt="car-image" class="home__offer-item-image">
+                        </div>
+                    </a>
+                    <a href="#service_home">
+                        <div class="home__offer-item">
+                            <h5 class="home__offer-item-header">
+                                Majątkowe
+                            </h5>
+                            <img src="images/header-icons/home.png" alt="car-image" class="home__offer-item-image">
+                        </div>
+                    </a>
+                    <a href="#service_life">
+                        <div class="home__offer-item">
+                            <h5 class="home__offer-item-header">
+                                Na życie
+                            </h5>
+                            <img src="images/header-icons/health.png" alt="car-image" class="home__offer-item-image heart-beat">
+                        </div>
+                    </a>
+                    <a href="#service_travel">
+                        <div class="home__offer-item">
+                            <h5 class="home__offer-item-header">
+                                Turystyczne
+                            </h5>
+                            <img src="images/header-icons/travel.PNG" alt="car-image" class="home__offer-item-image">
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section class="about">
-            <div id="about" class="about__hook" ></div> 
-            <div class="about__content">
-                
-                <div class="about__text">
+            <div id="about" class="about__hook"></div>
+            <div class="about__container">
+
+                <div class="about__content">
                     <a href="#about">
                         <h2 class="section-header about__header">O nas</h2>
                     </a>
-                    
-                    <p>Jesteśmy wiodącą firmą ubezpieczeniową, która oferuje kompleksowe rozwiązania dostosowane do
-                        Twoich
-                        potrzeb.</p>
-                    <p>Nasza misja to zapewnienie bezpieczeństwa i spokoju ducha naszym klientom.</p>
-                    <p>Nasza wizja to być liderem w branży ubezpieczeń, oferując innowacyjne i dostosowane do potrzeb
-                        klientów
-                        rozwiązania.</p>
-                    <p>Nasze wartości to uczciwość, profesjonalizm i zaangażowanie w obsługę klienta.</p>
+                    <div class="about__text">
+                        <p>Jesteśmy wiodącą firmą ubezpieczeniową, która oferuje kompleksowe rozwiązania dostosowane do
+                            Twoich
+                            potrzeb.</p>
+                        <p>Nasza misja to zapewnienie bezpieczeństwa i spokoju ducha naszym klientom.</p>
+                        <p>Nasza wizja to być liderem w branży ubezpieczeń, oferując innowacyjne i dostosowane do
+                            potrzeb
+                            klientów
+                            rozwiązania.</p>
+                        <p>Nasze wartości to uczciwość, profesjonalizm i zaangażowanie w obsługę klienta.</p>
+                    </div>
                 </div>
 
                 <div class="about__image">
-    
+
                     <img src="images/about-us/about-us.png" alt="about-us-image" class="about__image-img">
-    
-                    <img src="images/about-us/about-us-background.png" alt="about-us-image" class="about__image-background">
-    
+
+                    <img src="images/about-us/about-us-background.png" alt="about-us-image"
+                        class="about__image-background">
+
                 </div>
             </div>
         </section>
@@ -154,7 +187,9 @@
                 <h2 class="section-header services__header">Nasze usługi ubezpieczeń</h2>
             </a>
             <div class="services__cards">
+
                 <div class="services__card">
+                    <div id="service_car" class="service__hook"></div>
                     <img src="images/services/car.png" alt="Ubezpieczenie komunikacyjne" class="services__card-image">
                     <div class="services__card-content">
                         <h3 class="services__card-header">Komunikacyjne</h3>
@@ -165,7 +200,9 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="services__card">
+                    <div id="service_home" class="service__hook"></div>
                     <img src="images/services/home.png" alt="Ubezpieczenie majątkowe" class="services__card-image">
                     <div class="services__card-content">
                         <h3 class="services__card-header">Majątkowe</h3>
@@ -177,7 +214,9 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="services__card">
+                    <div id="service_life" class="service__hook"></div>
                     <img src="images/services/life.png" alt="Ubezpieczenie na życie" class="services__card-image">
                     <div class="services__card-content">
                         <h3 class="services__card-header">Na życie</h3>
@@ -187,8 +226,10 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="services__card">
 
+                    <div id="service_travel" class="service__hook"></div>
                     <img src="images/services/travel.png" alt="Ubezpieczenie turystyczne" class="services__card-image">
 
                     <div class="services__card-content">
@@ -215,47 +256,63 @@
             <a href="#faq">
                 <h2 class="section-header faq__header">FAQ</h2>
             </a>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie rodzaje ubezpieczeń oferujecie?</h4>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie rodzaje ubezpieczeń oferujecie?</h4>
+                </summary>
                 <p class="faq__answer">Oferujemy ubezpieczenia komunikacyjne, majątkowe oraz na życie.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jak mogę skontaktować się z Wami?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jak mogę skontaktować się z Wami?</h4>
+                </summary>
                 <p class="faq__answer">Możesz skontaktować się z nami telefonicznie lub mailowo. Nasze dane
                     kontaktowe znajdziesz w sekcji kontakt.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie dokumenty są potrzebne do zakupu ubezpieczenia?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie dokumenty są potrzebne do zakupu ubezpieczenia?</h4>
+                </summary>
                 <p class="faq__answer">W zależności od rodzaju ubezpieczenia, mogą być wymagane różne dokumenty.
                     Zazwyczaj potrzebne są dokumenty tożsamości oraz dokumenty potwierdzające posiadanie pojazdu lub
                     nieruchomości.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie są metody płatności?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie są metody płatności?</h4>
+                </summary>
                 <p class="faq__answer">Akceptujemy płatności kartą kredytową, przelewem bankowym oraz gotówką w
                     naszych biurach.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie są godziny otwarcia Waszych biur?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie są godziny otwarcia Waszych biur?</h4>
+                </summary>
                 <p class="faq__answer">Nasze biura są otwarte od poniedziałku do piątku w godzinach 9:00-17:00.
                     W soboty jesteśmy dostępni w wybranych lokalizacjach.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie są zasady dotyczące zwrotów?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie są zasady dotyczące zwrotów?</h4>
+                </summary>
                 <p class="faq__answer">Zwroty są możliwe w przypadku rezygnacji z ubezpieczenia w ciągu 14 dni
                     od daty zakupu. Wymagana jest pisemna rezygnacja oraz zwrot polisy.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie są zasady dotyczące wypłaty odszkodowań?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie są zasady dotyczące wypłaty odszkodowań?</h4>
+                </summary>
                 <p class="faq__answer">W przypadku szkody należy zgłosić ją do naszego biura lub przez formularz
                     online. Wymagane są dokumenty potwierdzające szkodę oraz wszelkie inne dokumenty wymagane w danym
                     przypadku.</p>
-            </div>
-            <div class="faq__item">
-                <h4 class="faq__question">Jakie są zasady dotyczące przedłużenia polisy?</h4>
+            </details>
+            <details class="faq__item">
+                <summary class="faq__question">
+                    <h4>Jakie są zasady dotyczące przedłużenia polisy?</h4>
+                </summary>
                 <p class="faq__answer">Polisy można przedłużyć na miesiąc przed końcem okresu ubezpieczenia.
                     Wymagana jest aktualizacja danych oraz opłacenie składki.</p>
-            </div>
+            </details>
         </section>
 
         <section id="info" class="info">
@@ -273,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="info__contact">
                     <h2 class="info__header">Kontakt</h2>
                     <div class="info__list">
@@ -289,14 +346,15 @@
                                 <h4>autobal@autobal.pl</h4>
                             </a>
                         </div>
-                        </div>
+                    </div>
                 </div>
-                
+
                 <div class="info__adress">
                     <h2 class="info__header">Adres</h2>
                     <div class="info__list">
                         <div class="info__item">
-                            <a href="https://www.google.com/maps/dir/?api=1&destination=autobal+Balicka+Kraków" target="_blank">
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=autobal+Balicka+Kraków"
+                                target="_blank">
                                 <h4>
                                     <span>ul. Balicka 4,</span>
                                     <span>30-149</span>
@@ -308,7 +366,7 @@
                     </div>
                 </div>
 
-                <div class="info__parking">
+                <div class="info__item info__parking">
                     <!-- <img src="images/info/parking.png" alt="parking-icon"
                         class="info__parking-icon"> -->
                     <h4>
@@ -320,11 +378,8 @@
                     <!-- <h3 class="info__sub-header">Znajdź nas</h3> -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.2186350630327!2d19.884584876812177!3d50.08219331381046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bd2112ba061%3A0xf4b97bf2c80fbbe!2sAutobal.%20Agencja%20ubezpieczeniowa!5e0!3m2!1spl!2spl!4v1748887826371!5m2!1spl!2spl"
-                        class="info__map-iframe" 
-                        allowfullscreen="true" 
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Mapa"></iframe>
+                        class="info__map-iframe" allowfullscreen="true" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Mapa"></iframe>
                 </div>
             </div>
         </section>
@@ -334,6 +389,9 @@
         <p class="footer__text">&copy; 2023 Autobal. Wszelkie prawa zastrzeżone.</p>
     </footer> -->
 
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/aniamtions.js"></script>
 </body>
 
 </html>
