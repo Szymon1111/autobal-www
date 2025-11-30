@@ -44,7 +44,7 @@
 }
 
 .about__image-img {
-    width: 500px;
+    width: 600px;
 }
 
 .about__image-background {
@@ -60,7 +60,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 924px) {
+@media screen and ((max-width: 924px)) {
     
     .about {
         padding-top: var(--section-padding-top-bottom-mobile);

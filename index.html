@@ -35,7 +35,7 @@
         <div class="loader__spinner"></div>
         <h1 class="loader__text">Ładowanie...</h1>
         <div class="loader__animation-container">
-            <div class="loader__animation-bar" ></div>
+            <div class="loader__animation-bar"></div>
         </div>
     </div>
 
@@ -68,6 +68,9 @@
                     <a href="#faq">FAQ</a>
                 </div>
                 <div class="header__nav-item">
+                    <a href="#documents">Przydatne pliki</a>
+                </div>
+                <div class="header__nav-item">
                     <a href="#info">Info</a>
                 </div>
             </nav>
@@ -93,27 +96,26 @@
                     </h1>
 
                     <!-- <span> -->
-                        <h4 class="home__sub-header">
-                            Z troską o to, co dla
-                            <span class="accent-color"> Ciebie </span>najważniejsze.
-                        </h4>
-                        <p>
-                            Oferujemy kompleksowe ubezpieczenia dostosowane do <span class="accent-color"> Twoich
-                            </span>potrzeb.
-                        </p>
+                    <h4 class="home__sub-header">
+                        Z troską o to, co dla
+                        <span class="accent-color"> Ciebie </span>najważniejsze.
+                    </h4>
+                    <p>
+                        Oferujemy kompleksowe ubezpieczenia dostosowane do <span class="accent-color"> Twoich
+                        </span>potrzeb.
+                    </p>
                     <!-- </span> -->
 
                     <a href="tel: 126369099">
                         <h4 class="home__contact-header">
-                            Zadzwoń i skorzystaj z naszych usług:
-                            <div class="accent-color home__contact-phone">+12 636 90 99</div>
+                            Zadzwoń i skorzystaj z naszych usług
                         </h4>
                     </a>
 
                 </div>
 
                 <div class="home__offer">
-                    <a href="#service_car">
+                    <a href="#service_car" class="home__offer-item-link">
                         <div class="home__offer-item">
                             <h5 class="home__offer-item-header">
                                 Komunikacyjne
@@ -121,28 +123,56 @@
                             <img src="images/header-icons/car.PNG" alt="car-image" class="home__offer-item-image">
                         </div>
                     </a>
-                    <a href="#service_home">
+                    <a href="#service_home" class="home__offer-item-link">
                         <div class="home__offer-item">
                             <h5 class="home__offer-item-header">
                                 Majątkowe
                             </h5>
+                            <div class="smoke-wrap" id="smokeWrap">
+                                <svg class="smoke-svg" viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice"
+                                    id="smokeSvg" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <filter id="smokeBlur" x="-50%" y="-50%" width="200%" height="200%">
+                                            <feGaussianBlur stdDeviation="8" result="blur" />
+                                            <feColorMatrix type="matrix" values="1 0 0 0 0
+                                                0 1 0 0 0
+                                                0 0 1 0 0
+                                                0 0 0 0.6 0" />
+                                        </filter>
+                                    </defs>
+                                    ]
+                                    <g id="puffsGroup"></g>
+                                </svg>
+
+                                <div class="source" aria-hidden="true"></div>
+                            </div>
                             <img src="images/header-icons/home.png" alt="car-image" class="home__offer-item-image">
                         </div>
                     </a>
-                    <a href="#service_life">
+                    <a href="#service_buisness" class="home__offer-item-link">
+                        <div class="home__offer-item">
+                            <h5 class="home__offer-item-header">
+                                Biznes
+                            </h5>
+                            <img src="images/header-icons/buisness.png" alt="car-image"
+                                class="home__offer-item-image">
+                        </div>
+                    </a>
+                    <a href="#service_life" class="home__offer-item-link">
                         <div class="home__offer-item">
                             <h5 class="home__offer-item-header">
                                 Na życie
                             </h5>
-                            <img src="images/header-icons/health.png" alt="car-image" class="home__offer-item-image heart-beat">
+                            <img src="images/header-icons/health.png" alt="car-image"
+                                class="home__offer-item-image heart-beat">
                         </div>
                     </a>
-                    <a href="#service_travel">
+                    <a href="#service_travel" class="home__offer-item-link">
                         <div class="home__offer-item">
                             <h5 class="home__offer-item-header">
                                 Turystyczne
                             </h5>
-                            <img src="images/header-icons/travel.PNG" alt="car-image" class="home__offer-item-image">
+                            <img src="images/header-icons/travel_v2.PNG" alt="car-image" class="home__offer-item-image">
                         </div>
                     </a>
                 </div>
@@ -158,15 +188,22 @@
                         <h2 class="section-header about__header">O nas</h2>
                     </a>
                     <div class="about__text">
-                        <p>Jesteśmy wiodącą firmą ubezpieczeniową, która oferuje kompleksowe rozwiązania dostosowane do
-                            Twoich
-                            potrzeb.</p>
-                        <p>Nasza misja to zapewnienie bezpieczeństwa i spokoju ducha naszym klientom.</p>
-                        <p>Nasza wizja to być liderem w branży ubezpieczeń, oferując innowacyjne i dostosowane do
-                            potrzeb
-                            klientów
-                            rozwiązania.</p>
-                        <p>Nasze wartości to uczciwość, profesjonalizm i zaangażowanie w obsługę klienta.</p>
+                        <p>
+                            Od ponad dwóch dekad jako Autobal wspieramy klientów w Krakowie, łącząc naszą specjalizację
+                            w ubezpieczeniach komunikacyjnych i majątkowych z dedykowaną ofertą dla biznesu.
+                        </p>
+                        <p>
+                            Nasz doświadczony zespół zapewnia także pełną ochronę życia i zdrowia, wyróżniając się na
+                            rynku indywidualnym podejściem.
+                        </p>
+                        <p>
+                            Naszym celem jest gwarantowanie Państwu bezpieczeństwa poprzez oferowanie precyzyjnie
+                            dopasowanych ubezpieczeń.
+                        </p>
+                        <p>
+                            Wychodząc naprzeciw oczekiwaniom naszych klientów oferujemy szeroką gamę produktów z różnych
+                            towarzystw ubezpieczeniowych.
+                        </p>
                     </div>
                 </div>
 
@@ -195,8 +232,8 @@
                         <h3 class="services__card-header">Komunikacyjne</h3>
                         <p class="services__card-description">
                             Oferujemy ubezpieczenia komunikacyjne, które zapewniają ochronę Twojego pojazdu oraz
-                            bezpieczeństwo na drodze.
-                            Nasze polisy obejmują OC, AC, NNW oraz Assistance, dostosowane do Twoich potrzeb.
+                            bezpieczeństwo na drodze. Nasze polisy obejmują OC, AC, NNW oraz Assistance, dostosowane do
+                            Twoich potrzeb.
                         </p>
                     </div>
                 </div>
@@ -206,11 +243,23 @@
                     <img src="images/services/home.png" alt="Ubezpieczenie majątkowe" class="services__card-image">
                     <div class="services__card-content">
                         <h3 class="services__card-header">Majątkowe</h3>
-                        <p class="services__card-description"></p>
-                        Chroń swoje mienie dzięki naszym ubezpieczeniom majątkowym. Oferujemy polisy na domy,
-                        mieszkania,
-                        budynki gospodarcze oraz inne nieruchomości, które zabezpieczą Cię przed nieprzewidzianymi
-                        zdarzeniami.
+                        <p class="services__card-description">
+                            Zapewnij sobie bezcenny spokój ducha, wiedząc, że dorobek Twojego życia jest bezpieczny
+                            niezależnie od kaprysów losu. Nasza polisa to gwarancja, że cokolwiek się wydarzy, Twój dom
+                            i wszystko, co w nim cenne, pozostanie pod najlepszą ochroną.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div id="service_buisness" class="service__hook"></div>
+                    <img src="images/services/buisness.jpg" alt="Ubezpieczenie biznes" class="services__card-image">
+                    <div class="services__card-content">
+                        <h3 class="services__card-header">Biznes</h3>
+                        <p class="services__card-description">
+                            Dedykowane rozwiązania chroniące mienie firmy, pracowników oraz zapewniające
+                            odpowiedzialność cywilną z tytułu prowadzonej działalności. Oferujemy indywidualne programy
+                            ochrony, które pozwalają bezpiecznie rozwijać Twój biznes bez obaw o nieprzewidziane straty.
                         </p>
                     </div>
                 </div>
@@ -220,9 +269,10 @@
                     <img src="images/services/life.png" alt="Ubezpieczenie na życie" class="services__card-image">
                     <div class="services__card-content">
                         <h3 class="services__card-header">Na życie</h3>
-                        <p class="services__card-description"></p>
-                        Zadbaj o przyszłość swoją i swoich bliskich dzięki naszym ubezpieczeniom na życie.
-                        Oferujemy elastyczne rozwiązania, które zapewnią wsparcie finansowe w trudnych chwilach.
+                        <p class="services__card-description">
+                            Zadbaj o finansowe bezpieczeństwo swojej rodziny na wypadek choroby, wypadku lub innych
+                            trudnych zdarzeń życiowych. Pomożemy Ci dobrać polisę, która stanie się realnym wsparciem
+                            dla Twoich bliskich w przyszłości. Oferujemy również pakiety medyczne.
                         </p>
                     </div>
                 </div>
@@ -236,16 +286,15 @@
                         <h3 class="services__card-header">Turystyczne</h3>
                         <p class="services__card-description">
                             Podróżuj bez obaw dzięki naszym ubezpieczeniom turystycznym. Oferujemy ochronę zdrowia,
-                            bagażu
-                            oraz
-                            wsparcie w przypadku nieprzewidzianych sytuacji podczas podróży.
+                            bagażu oraz wsparcie w przypadku nieprzewidzianych sytuacji podczas podróży oraz utratę
+                            kosztów związanych z odwołaniem wyjazdu.
                         </p>
                     </div>
 
                     <div class="serices__card-extra-content">
                         <a href="https://form.moje.generali.pl/ubezpieczenia-podrozne/zagraniczne/1734114"
                             target="_blank">
-                            Zamów online już teraz!
+                            Kliknij i zamów online już teraz!
                         </a>
                     </div>
                 </div>
@@ -256,63 +305,388 @@
             <a href="#faq">
                 <h2 class="section-header faq__header">FAQ</h2>
             </a>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie rodzaje ubezpieczeń oferujecie?</h4>
-                </summary>
-                <p class="faq__answer">Oferujemy ubezpieczenia komunikacyjne, majątkowe oraz na życie.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jak mogę skontaktować się z Wami?</h4>
-                </summary>
-                <p class="faq__answer">Możesz skontaktować się z nami telefonicznie lub mailowo. Nasze dane
-                    kontaktowe znajdziesz w sekcji kontakt.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie dokumenty są potrzebne do zakupu ubezpieczenia?</h4>
-                </summary>
-                <p class="faq__answer">W zależności od rodzaju ubezpieczenia, mogą być wymagane różne dokumenty.
-                    Zazwyczaj potrzebne są dokumenty tożsamości oraz dokumenty potwierdzające posiadanie pojazdu lub
-                    nieruchomości.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie są metody płatności?</h4>
-                </summary>
-                <p class="faq__answer">Akceptujemy płatności kartą kredytową, przelewem bankowym oraz gotówką w
-                    naszych biurach.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie są godziny otwarcia Waszych biur?</h4>
-                </summary>
-                <p class="faq__answer">Nasze biura są otwarte od poniedziałku do piątku w godzinach 9:00-17:00.
-                    W soboty jesteśmy dostępni w wybranych lokalizacjach.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie są zasady dotyczące zwrotów?</h4>
-                </summary>
-                <p class="faq__answer">Zwroty są możliwe w przypadku rezygnacji z ubezpieczenia w ciągu 14 dni
-                    od daty zakupu. Wymagana jest pisemna rezygnacja oraz zwrot polisy.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie są zasady dotyczące wypłaty odszkodowań?</h4>
-                </summary>
-                <p class="faq__answer">W przypadku szkody należy zgłosić ją do naszego biura lub przez formularz
-                    online. Wymagane są dokumenty potwierdzające szkodę oraz wszelkie inne dokumenty wymagane w danym
-                    przypadku.</p>
-            </details>
-            <details class="faq__item">
-                <summary class="faq__question">
-                    <h4>Jakie są zasady dotyczące przedłużenia polisy?</h4>
-                </summary>
-                <p class="faq__answer">Polisy można przedłużyć na miesiąc przed końcem okresu ubezpieczenia.
-                    Wymagana jest aktualizacja danych oraz opłacenie składki.</p>
-            </details>
+
+            <div class="faq__container">
+                <!-- SEKCJA 1: OC vs AC -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Jakie ubezpieczenie wybrać – OC czy AC i czym różnią się te polisy?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Czym jest ubezpieczenie OC?</h4>
+                            </summary>
+                            <p class="faq__answer">Ubezpieczenie OC (odpowiedzialność cywilna) to podstawowa,
+                                obowiązkowa
+                                polisa dla każdego właściciela pojazdu. Chroni kierowcę przed kosztami szkód
+                                wyrządzonych
+                                innym uczestnikom ruchu — zarówno w pojazdach, jak i na mieniu czy zdrowiu osób
+                                trzecich.
+                                Zakres OC jest taki sam u każdego ubezpieczyciela, dlatego warto skupić się głównie na
+                                cenie
+                                i obsłudze.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Czym jest ubezpieczenie AC (autocasco)?</h4>
+                            </summary>
+                            <p class="faq__answer">Autocasco to dobrowolne ubezpieczenie samochodu, które chroni pojazd
+                                właściciela. Dzięki AC możesz liczyć na odszkodowanie w razie: kolizji lub wypadku z
+                                Twojej
+                                winy, szkód parkingowych, uszkodzenia przez żywioły, kradzieży, aktu wandalizmu.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Co wybrać — OC czy pełen pakiet OC + AC?</h4>
+                            </summary>
+                            <p class="faq__answer">Jeśli zależy Ci na kompleksowej ochronie samochodu, szczególnie
+                                nowego
+                                lub droższego, warto wybrać pakiet OC + AC. Taka opcja zmniejsza ryzyko finansowe i
+                                gwarantuje pełniejszą finansową ochronę pojazdu.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 2: Ubezpieczenie na życie -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Ile kosztuje ubezpieczenie na życie i od czego zależy cena polisy?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Co wpływa na koszt ubezpieczenia na życie?</h4>
+                            </summary>
+                            <p class="faq__answer">Cena polisy na życie zależy od: wieku ubezpieczonego, ogólnego stanu
+                                zdrowia, sumy ubezpieczenia (wysokości świadczenia), rodzaju ochrony, czasu trwania
+                                umowy,
+                                ryzyka zawodowego lub stylu życia. Młodsze osoby płacą zazwyczaj znacznie niższe
+                                składki,
+                                dlatego warto wykupić polisę wcześniej.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Czy można dopasować ubezpieczenie na życie do własnych potrzeb?</h4>
+                            </summary>
+                            <p class="faq__answer">Tak. Towarzystwa oferują wiele rozszerzeń, np.: ubezpieczenie od
+                                poważnych zachorowań, pobytu w szpitalu, wypadków, ochronę rodziny, zabezpieczenie
+                                kredytu
+                                hipotecznego. Dobrze dobrana polisa zapewnia komfort finansowy w trudnych sytuacjach
+                                życiowych.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 3: Dokumenty -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Jakie dokumenty są potrzebne, aby wykupić polisę ubezpieczeniową?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Podstawowe dokumenty wymagane przy zakupie polisy</h4>
+                            </summary>
+                            <p class="faq__answer">Do zawarcia umowy ubezpieczeniowej najczęściej potrzebne są: dowód
+                                osobisty, numer PESEL, aktualne dane kontaktowe.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jakie dokumenty są potrzebne przy ubezpieczeniu samochodu?</h4>
+                            </summary>
+                            <p class="faq__answer">Do zakupu ubezpieczenia OC lub AC wymagane są: dowód rejestracyjny
+                                lub
+                                jego dane, numer VIN, dane właściciela pojazdu, czasem także informacja o przebiegu lub
+                                dotychczasowych szkodach.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Dokumenty do ubezpieczenia na życie lub zdrowotnego</h4>
+                            </summary>
+                            <p class="faq__answer">Najczęściej wystarczy ankieta medyczna, choć czasem ubezpieczyciel
+                                może
+                                poprosić o badania lekarskie przy wysokich sumach ubezpieczenia.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 4: Nieruchomości -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Jakie ubezpieczenie nieruchomości najlepiej chroni dom lub mieszkanie?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Co powinno obejmować dobre ubezpieczenie nieruchomości?</h4>
+                            </summary>
+                            <p class="faq__answer">Kompleksowa polisa domu lub mieszkania powinna chronić: stałe
+                                elementy
+                                (instalacje, zabudowy), wyposażenie ruchome (meble, sprzęt RTV/AGD), pokrywać szkody
+                                powstałe w wyniku pożaru, zalania, huraganu, gradobicia.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jakie rozszerzenia polisy warto rozważyć?</h4>
+                            </summary>
+                            <p class="faq__answer">Najczęściej wybierane dodatki to: ubezpieczenie od kradzieży z
+                                włamaniem,
+                                przepięcia elektryczne, stłuczenia szyb, assistance domowy, OC w życiu prywatnym (szkody
+                                wyrządzone sąsiadom).</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 5: OC dla firm -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Czy przedsiębiorca musi posiadać ubezpieczenie odpowiedzialności cywilnej (OC)?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Czy OC dla firm jest obowiązkowe?</h4>
+                            </summary>
+                            <p class="faq__answer">Nie wszystkie branże muszą posiadać OC, ale niektóre — np. medyczna,
+                                budowlana, księgowa, transportowa — mają taki obowiązek ustawowy.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Dlaczego warto kupić OC działalności gospodarczej?</h4>
+                            </summary>
+                            <p class="faq__answer">Ubezpieczenie OC firmy chroni przed kosztami szkód wyrządzonych
+                                klientom
+                                w trakcie wykonywania usług. Jest to szczególnie ważne w zawodach wymagających wysokiej
+                                odpowiedzialności lub pracy z klientem.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak dobrać najlepszą polisę OC dla firmy?</h4>
+                            </summary>
+                            <p class="faq__answer">Dobór polisy zależy od profilu działalności, liczby pracowników,
+                                obrotów
+                                oraz rodzaju wykonywanych usług. Doradca ubezpieczeniowy pomoże przeanalizować ryzyka i
+                                dobrać adekwatną ochronę.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 6: Zgłaszanie szkody -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Jak zgłosić szkodę?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak wygląda proces zgłaszania szkody ubezpieczeniowej?</h4>
+                            </summary>
+                            <p class="faq__answer">Zgłoszenie szkody w ubezpieczeniu można przeprowadzić na kilka
+                                sposobów —
+                                telefonicznie, online, poprzez aplikację mobilną lub w oddziale agenta. Najszybszą
+                                metodą
+                                jest zgłoszenie szkody przez formularz internetowy towarzystwa. Wymagane są podstawowe
+                                dane:
+                                numer polisy, opis zdarzenia, data i miejsce, dane poszkodowanego oraz dokumentacja
+                                zdjęciowa.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak przygotować się do zgłoszenia szkody?</h4>
+                            </summary>
+                            <p class="faq__answer">Przed rozpoczęciem zgłoszenia warto przygotować: numer polisy, dane
+                                pojazdu lub nieruchomości, zdjęcia uszkodzeń oraz ewentualne notatki policyjne. Im
+                                dokładniejsze informacje podane przy zgłoszeniu szkody, tym szybciej przebiega proces
+                                likwidacji.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Ile trwa likwidacja szkody?</h4>
+                            </summary>
+                            <p class="faq__answer">Towarzystwa ubezpieczeniowe mają obowiązek rozpatrzyć zgłoszenie
+                                szkody w
+                                ciągu 30 dni. W praktyce dla prostych szkód komunikacyjnych trwa to często kilka dni. W
+                                przypadku bardziej skomplikowanych zdarzeń może być wymagane dodatkowe postępowanie i
+                                dokumenty.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 7: OC w życiu prywatnym -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Co obejmuje OC w życiu prywatnym?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Zakres odpowiedzialności cywilnej w życiu prywatnym</h4>
+                            </summary>
+                            <p class="faq__answer">Ubezpieczenie OC w życiu prywatnym chroni przed finansowymi
+                                konsekwencjami szkód wyrządzonych osobom trzecim w codziennych sytuacjach. Polisa
+                                obejmuje
+                                m.in. szkody spowodowane przez dzieci, zwierzęta domowe, rowerzystów, a nawet
+                                uszkodzenia
+                                powstałe podczas rekreacji czy uprawiania sportu amatorskiego.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jakie szkody najczęściej pokrywa OC w życiu prywatnym?</h4>
+                            </summary>
+                            <p class="faq__answer">Typowe przykłady obejmują: zbicie telefonu lub uszkodzenie mienia
+                                innej
+                                osoby, szkody wyrządzone na rowerze lub hulajnodze, szkody spowodowane przez psa lub
+                                kota,
+                                zalanie sąsiada w mieszkaniu, uszkodzenia podczas uprawiania sportu.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Kogo chroni OC w życiu prywatnym?</h4>
+                            </summary>
+                            <p class="faq__answer">Polisa zazwyczaj obejmuje domowników mieszkających pod tym samym
+                                adresem:
+                                małżonka, partnera, dzieci oraz współlokatorów. To ważny element ochrony w przypadku
+                                szkód
+                                przypadkowych, za które ponoszona jest odpowiedzialność cywilna.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 8: Kary za brak OC -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Aktualne kary za brak OC</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Kary za brak obowiązkowego OC komunikacyjnego</h4>
+                            </summary>
+                            <p class="faq__answer">Brak ważnego ubezpieczenia OC pojazdu mechanicznego wiąże się z
+                                wysokimi
+                                karami finansowymi nakładanymi przez UFG. Wysokość kary zależy od rodzaju pojazdu oraz
+                                długości przerwy w ubezpieczeniu.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Przykładowe wysokości kar (2025 r.)</h4>
+                            </summary>
+                            <p class="faq__answer">
+                                <strong>Samochód osobowy:</strong><br>
+                                1870 zł – za przerwę do 3 dni<br>
+                                4670 zł – za przerwę od 4 do 14 dni<br>
+                                9330 zł – za przerwę powyżej 14 dni<br><br>
+                                <strong>Motocykl / skuter:</strong><br>
+                                310 zł – za przerwę do 3 dni<br>
+                                780 zł – za przerwę od 4 do 14 dni<br>
+                                1560 zł – za przerwę powyżej 14 dni<br><br>
+                                <strong>Samochód ciężarowy:</strong><br>
+                                2800 zł – za przerwę do 3 dni<br>
+                                7000 zł – za przerwę od 4 do 14 dni<br>
+                                14 000 zł – za przerwę powyżej 14 dni
+                            </p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Dlaczego UFG karze za brak polisy OC?</h4>
+                            </summary>
+                            <p class="faq__answer">OC chroni osoby poszkodowane w wypadkach drogowych. UFG musi mieć
+                                pewność, że każdy pojazd poruszający się po drogach pokryje wyrządzone szkody. Kara za
+                                brak
+                                OC jest sposobem na egzekwowanie tego obowiązku.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 9: Zdjęcia do AC -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Jak prawidłowo wykonać zdjęcia do AC?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak przygotować pojazd do zdjęć?</h4>
+                            </summary>
+                            <p class="faq__answer">Aby zgłoszenie AC zostało zaakceptowane, zdjęcia muszą być wyraźne i
+                                wykonane zgodnie z wytycznymi ubezpieczyciela. Należy umyć pojazd, ustawić go w dobrze
+                                oświetlonym miejscu oraz usunąć elementy zasłaniające widok (śnieg, pokrowce,
+                                reklamówki,
+                                bagaże).</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jakie ujęcia są wymagane?</h4>
+                            </summary>
+                            <p class="faq__answer">
+                                Zazwyczaj wymagane są zdjęcia:<br>
+                                - Zdjęcia zrobione po przekątnych od strony kierowcy z przodu oraz prawej strony z tyłu
+                                samochodu aby widoczne były boki fotografowanego pojazdu.<br>
+                                - numeru VIN nabitego na karoserii (nie na naklejce lub podszybiu)<br>
+                                - licznika przebiegu<br>
+                                - wyposażenia (deska rozdzielcza)<br>
+                                - kluczyków<br>
+                                - ewentualnych uszkodzeń
+                            </p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak uniknąć błędów na zdjęciach do AC?</h4>
+                            </summary>
+                            <p class="faq__answer">Najczęstsze błędy to: zdjęcia w ciemności, niska jakość, zamazane
+                                numery
+                                rejestracyjne, brak zdjęć VIN lub niewidoczny przebieg. Warto wykonać kilka zdjęć
+                                każdego
+                                ujęcia i wybrać najlepsze.</p>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- SEKCJA 10: Zielona Karta -->
+                <details class="faq__category">
+                    <summary class="faq__category-title">
+                        <h3>Do jakich krajów jest potrzebna Zielona Karta?</h3>
+                    </summary>
+                    <div class="faq__subcategory-list">
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Kraje wymagające Zielonej Karty (ZK)</h4>
+                            </summary>
+                            <p class="faq__answer">
+                                Zielona Karta jest dokumentem potwierdzającym ważność OC za granicą poza Unią
+                                Europejską. Do
+                                krajów, które wymagają Zielonej Karty, należą obecnie m.in.:<br>
+                                Albania, Bośnia i Hercegowina, Iran, Izrael, Maroko, Macedonia Północna, Mołdawia,
+                                Tunezja,
+                                Turcja, Ukraina (zależnie od aktualnych przepisów), Białoruś.
+                            </p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>W jakich krajach nie trzeba Zielonej Karty?</h4>
+                            </summary>
+                            <p class="faq__answer">W większości państw UE, strefy Schengen oraz EOG wystarczy
+                                standardowe
+                                ubezpieczenie OC.</p>
+                        </details>
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <h4>Jak wyrobić Zieloną Kartę?</h4>
+                            </summary>
+                            <p class="faq__answer">Dokument wydaje ubezpieczyciel pojazdu, najczęściej bezpłatnie lub za
+                                niewielką opłatą. Warto złożyć wniosek z kilkudniowym wyprzedzeniem przed wyjazdem.</p>
+                        </details>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+
+        <section id="documents" class="documents">
+            <a href="#documents">
+                <h2 class="section-header documents__header">Przydatne pliki</h2>
+            </a>
         </section>
 
         <section id="info" class="info">
@@ -351,7 +725,7 @@
 
                 <div class="info__adress">
                     <h2 class="info__header">Adres</h2>
-                    <div class="info__list">
+                    <div class="info__list-column">
                         <div class="info__item">
                             <a href="https://www.google.com/maps/dir/?api=1&destination=autobal+Balicka+Kraków"
                                 target="_blank">
@@ -359,19 +733,18 @@
                                     <span>ul. Balicka 4,</span>
                                     <span>30-149</span>
                                     <span>Kraków</span>
-                                    <span style="color: var(--text-color);">- nawiguj!</span>
+                                    <!-- <span style="color: var(--text-color);">- nawiguj!</span> -->
                                 </h4>
                             </a>
                         </div>
+                        <div class="info__item info__parking">
+                            <!-- <img src="images/info/parking.png" alt="parking-icon"
+                                class="info__parking-icon"> -->
+                            <h4>
+                                Oferujemy wygodny parking dla naszych klientów!
+                            </h4>
+                        </div>
                     </div>
-                </div>
-
-                <div class="info__item info__parking">
-                    <!-- <img src="images/info/parking.png" alt="parking-icon"
-                        class="info__parking-icon"> -->
-                    <h4>
-                        Oferujemy wygodny parking dla naszych klientów!
-                    </h4>
                 </div>
 
                 <div class="info__map">
@@ -389,9 +762,12 @@
         <p class="footer__text">&copy; 2023 Autobal. Wszelkie prawa zastrzeżone.</p>
     </footer> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
     <script src="js/main.js"></script>
     <script src="js/events.js"></script>
     <script src="js/aniamtions.js"></script>
+    <script src="js/smoke-animations.js"></script>
 </body>
 
 </html>

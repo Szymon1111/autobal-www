@@ -16,7 +16,6 @@
 
     padding-bottom: 45px;
 
-    width: 100%;
     max-width: calc(100vw - 3rem);
 }
 
@@ -28,15 +27,15 @@
     background-color: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
+
     z-index: 100;
 }
 
 .services__card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-upper);
 }
 
 .services__card-image {
@@ -118,12 +117,17 @@
     translate: 0 -150px;
 }
 
-@media screen and (max-width: 924px) {
+@media screen and ((max-width: 924px)) {
     .services {
         align-items: flex-start;
     }
-    
+
     .serices__card-extra-content {
         font-size: 1.25rem;
+    }
+
+    .services__card {
+        transform: translateY(0) !important;
+        box-shadow: var(--box-shadow) !important;
     }
 }
