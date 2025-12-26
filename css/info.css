@@ -3,7 +3,7 @@
     background-color: var(--text-color);
     color: var(--background-color);
 
-    height: 90vh;
+    min-height: 90vh;
     width: 100%;
 
     padding: 6rem 2rem;
@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr); */
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
 
