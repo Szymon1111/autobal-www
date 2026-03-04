@@ -1,0 +1,7 @@
+﻿User-agent: *
+Allow: /
+Disallow: /materialy/
+Disallow: /materiały/
+
+Sitemap: https://autobal.pl/sitemap.xml
+Host: autobal.pl
